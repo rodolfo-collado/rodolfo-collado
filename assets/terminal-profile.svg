@@ -1,16 +1,137 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="432" viewBox="0 0 1000 432" role="img" aria-labelledby="title desc">
-<title id="title">~/home  —  whereami --ascii</title><desc id="desc">Mapa ASCII de Centroamérica, con Nicaragua resaltada. Ubicación: Managua, Nicaragua. Zona horaria America/Managua (UTC−06:00). Siluetas simplificadas de Natural Earth.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2234" viewBox="0 0 1000 2234" role="img" aria-labelledby="title desc">
+<title id="title">rodolfo@arch: ~  —  profile.sh</title><desc id="desc">Perfil de Rodolfo Ramírez Collado. Presentación, tecnologías, proyectos Arch Linux y PyGebra, segundo lugar en olimpiadas de Java, inglés B2, certificaciones IBM SkillsBuild y mapa ASCII de Nicaragua.</desc>
 <defs><linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#cba6f7"/><stop offset=".5" stop-color="#89dceb"/><stop offset="1" stop-color="#a6e3a1"/></linearGradient></defs>
-<rect x="1" y="1" width="998" height="430" rx="14" fill="#11111b" stroke="#313244"/>
+<rect x="1" y="1" width="998" height="2232" rx="14" fill="#11111b" stroke="#313244"/>
 <path d="M15 1 H985 Q999 1 999 15 V45 H1 V15 Q1 1 15 1" fill="#181825"/>
 <path d="M1 45 H999" stroke="#313244"/>
 <circle cx="23" cy="23" r="5" fill="#f38ba8"/><circle cx="42" cy="23" r="5" fill="#f9e2af"/><circle cx="61" cy="23" r="5" fill="#a6e3a1"/>
 <g font-family="'DejaVu Sans Mono', 'Liberation Mono', monospace">
-<text x="88" y="28" fill="#a6adc8" font-size="12" >~/home  —  whereami --ascii</text>
+<text x="88" y="28" fill="#a6adc8" font-size="12" >rodolfo@arch: ~  —  profile.sh</text>
+<g transform="translate(0 0)">
 <text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
 <text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
 <text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#cdd6f4" font-size="14" >whereami --ascii --region central-america</text>
+<text x="180" y="80" fill="#89dceb" font-size="14" >./profile.sh --intro</text>
+<text x="28" y="123" fill="url(#spectrum)" font-size="19" xml:space="preserve">██████╗   ██████╗  ██████╗   ██████╗  ██╗      ███████╗  ██████╗ </text>
+<text x="28" y="143" fill="url(#spectrum)" font-size="19" xml:space="preserve">██╔══██╗ ██╔═══██╗ ██╔══██╗ ██╔═══██╗ ██║      ██╔════╝ ██╔═══██╗</text>
+<text x="28" y="163" fill="url(#spectrum)" font-size="19" xml:space="preserve">██║  ██║ ██║   ██║ ██║  ██║ ██║   ██║ ██║      ██║      ██║   ██║</text>
+<text x="28" y="183" fill="url(#spectrum)" font-size="19" xml:space="preserve">██████╔╝ ██║   ██║ ██║  ██║ ██║   ██║ ██║      █████╗   ██║   ██║</text>
+<text x="28" y="203" fill="url(#spectrum)" font-size="19" xml:space="preserve">██╔══██╗ ██║   ██║ ██║  ██║ ██║   ██║ ██║      ██╔══╝   ██║   ██║</text>
+<text x="28" y="223" fill="url(#spectrum)" font-size="19" xml:space="preserve">██║  ██║ ╚██████╔╝ ██████╔╝ ╚██████╔╝ ███████╗ ██║      ╚██████╔╝</text>
+<text x="28" y="243" fill="url(#spectrum)" font-size="19" xml:space="preserve">╚═╝  ╚═╝  ╚═════╝  ╚═════╝   ╚═════╝  ╚══════╝ ╚═╝       ╚═════╝ </text>
+<text x="30" y="280" fill="#cdd6f4" font-size="21" letter-spacing="7">RAMÍREZ COLLADO</text>
+<text x="30" y="312" fill="#a6adc8" font-size="16" >Backend · Bases de datos · Linux</text>
+<path d="M28 331 H972" stroke="#313244"/>
+<text x="30" y="361" fill="#89dceb" font-size="12" >ING. DE SISTEMAS / UAM</text>
+<text x="400" y="361" fill="#a6e3a1" font-size="12" >MANAGUA, NICARAGUA</text>
+<text x="771" y="361" fill="#cba6f7" font-size="12" >ES / EN B2</text>
+</g>
+<path d="M28 388 H972" stroke="#313244" stroke-dasharray="3 7"/>
+<g transform="translate(0 341)">
+<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
+<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
+<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
+<text x="180" y="80" fill="#89dceb" font-size="14" >whoami</text>
+<text x="28" y="118" fill="#cdd6f4" font-size="14" >Soy Rodolfo, estudiante de Ingeniería de Sistemas en la Universidad Americana (UAM).</text>
+<text x="28" y="154" fill="#cdd6f4" font-size="14" >Trabajo con Java, Spring Boot, Python y SQL. Me interesa construir software, entender cómo funciona y</text>
+<text x="28" y="178" fill="#cdd6f4" font-size="14" >documentar lo que aprendo.</text>
+<text x="28" y="220" fill="#a6adc8" font-size="14" >Linux también es parte de mi día a día: mi guía de Arch Linux reúne el proceso de instalación y</text>
+<text x="28" y="244" fill="#a6adc8" font-size="14" >configuración con BTRFS, rEFInd y Hyprland.</text>
+</g>
+<path d="M28 621 H972" stroke="#313244" stroke-dasharray="3 7"/>
+<g transform="translate(0 574)">
+<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
+<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
+<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
+<text x="180" y="80" fill="#89dceb" font-size="14" >stack --list --no-percentages</text>
+<rect x="28" y="107" width="298" height="200" rx="8" fill="#181825" stroke="#313244"/>
+<text x="43" y="134" fill="#cba6f7" font-size="13" >01 / DESARROLLO</text>
+<path d="M43 147 H311" stroke="#313244"/>
+<text x="44" y="174" fill="#cba6f7" font-size="13" >[+]</text>
+<text x="81" y="174" fill="#cdd6f4" font-size="14" >Java</text>
+<text x="44" y="200" fill="#cba6f7" font-size="13" >[+]</text>
+<text x="81" y="200" fill="#cdd6f4" font-size="14" >Spring Boot</text>
+<text x="44" y="226" fill="#cba6f7" font-size="13" >[+]</text>
+<text x="81" y="226" fill="#cdd6f4" font-size="14" >Python</text>
+<text x="44" y="252" fill="#cba6f7" font-size="13" >[+]</text>
+<text x="81" y="252" fill="#cdd6f4" font-size="14" >Kotlin</text>
+<text x="44" y="278" fill="#cba6f7" font-size="13" >[+]</text>
+<text x="81" y="278" fill="#cdd6f4" font-size="14" >POO</text>
+<rect x="351" y="107" width="298" height="200" rx="8" fill="#181825" stroke="#313244"/>
+<text x="366" y="134" fill="#89dceb" font-size="13" >02 / DATOS</text>
+<path d="M366 147 H634" stroke="#313244"/>
+<text x="367" y="174" fill="#89dceb" font-size="13" >[+]</text>
+<text x="404" y="174" fill="#cdd6f4" font-size="14" >SQL</text>
+<text x="367" y="200" fill="#89dceb" font-size="13" >[+]</text>
+<text x="404" y="200" fill="#cdd6f4" font-size="14" >PostgreSQL</text>
+<text x="367" y="226" fill="#89dceb" font-size="13" >[+]</text>
+<text x="404" y="226" fill="#cdd6f4" font-size="14" >Microsoft SQL Server</text>
+<rect x="674" y="107" width="298" height="200" rx="8" fill="#181825" stroke="#313244"/>
+<text x="689" y="134" fill="#a6e3a1" font-size="13" >03 / SISTEMAS</text>
+<path d="M689 147 H957" stroke="#313244"/>
+<text x="690" y="174" fill="#a6e3a1" font-size="13" >[+]</text>
+<text x="727" y="174" fill="#cdd6f4" font-size="14" >Linux / Arch Linux</text>
+<text x="690" y="200" fill="#a6e3a1" font-size="13" >[+]</text>
+<text x="727" y="200" fill="#cdd6f4" font-size="14" >Docker</text>
+<text x="690" y="226" fill="#a6e3a1" font-size="13" >[+]</text>
+<text x="727" y="226" fill="#cdd6f4" font-size="14" >Git / GitHub</text>
+<text x="690" y="252" fill="#a6e3a1" font-size="13" >[+]</text>
+<text x="727" y="252" fill="#cdd6f4" font-size="14" >Markdown</text>
+<text x="28" y="342" fill="#a6adc8" font-size="11" >EDITOR</text>
+<text x="95" y="342" fill="#cdd6f4" font-size="13" >IntelliJ IDEA · DataGrip · PyCharm · VS Code</text>
+</g>
+<path d="M28 946 H972" stroke="#313244" stroke-dasharray="3 7"/>
+<g transform="translate(0 899)">
+<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
+<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
+<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
+<text x="180" y="80" fill="#89dceb" font-size="14" >ls ~/projects --featured</text>
+<text x="28" y="121" fill="#cba6f7" font-size="16" >01</text>
+<text x="66" y="121" fill="#cdd6f4" font-size="17" >Arch Linux · Guía de instalación</text>
+<text x="28" y="154" fill="#cdd6f4" font-size="14" >Un recorrido de 14 capítulos para instalar y configurar Arch Linux: particionado, subvolúmenes BTRFS,</text>
+<text x="28" y="178" fill="#cdd6f4" font-size="14" >montaje, fstab, arch-chroot, mkinitcpio, usuarios, rEFInd y Hyprland.</text>
+<text x="28" y="226" fill="#89dceb" font-size="13" >[ Linux / Arch Linux / BTRFS / Hyprland / Documentación técnica ]</text>
+<path d="M28 249 H972" stroke="#313244"/>
+<text x="28" y="280" fill="#cba6f7" font-size="16" >02</text>
+<text x="66" y="280" fill="#cdd6f4" font-size="17" >PyGebra · Álgebra lineal paso a paso</text>
+<text x="28" y="313" fill="#cdd6f4" font-size="14" >Calculadora educativa que explica el procedimiento: matrices, sistemas de ecuaciones y métodos numéricos.</text>
+<text x="28" y="337" fill="#cdd6f4" font-size="14" >Algoritmos con Python estándar, resultados exactos con fracciones e interfaces de escritorio, navegador</text>
+<text x="28" y="361" fill="#cdd6f4" font-size="14" >local y terminal.</text>
+<text x="28" y="405" fill="#89dceb" font-size="13" >[ Python / Álgebra lineal / Algoritmos / Software educativo ]</text>
+</g>
+<path d="M28 1331 H972" stroke="#313244" stroke-dasharray="3 7"/>
+<g transform="translate(0 1284)">
+<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
+<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
+<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
+<text x="180" y="80" fill="#89dceb" font-size="14" >cat achievements.log</text>
+<text x="28" y="120" fill="#a6e3a1" font-size="13" >[2026-10-28]</text>
+<text x="148" y="120" fill="#cdd6f4" font-size="14" >Segundo lugar · III Olimpiadas de Programación en Java</text>
+<text x="148" y="146" fill="#a6adc8" font-size="13" >Universidad Americana (UAM)</text>
+<text x="28" y="184" fill="#89dceb" font-size="13" >[2024]</text>
+<text x="148" y="184" fill="#cdd6f4" font-size="14" >Inglés B2 (CEFR) · UAM Language Center</text>
+<text x="148" y="210" fill="#a6adc8" font-size="13" >Español nativo</text>
+</g>
+<path d="M28 1510 H972" stroke="#313244" stroke-dasharray="3 7"/>
+<g transform="translate(0 1463)">
+<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
+<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
+<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
+<text x="180" y="80" fill="#89dceb" font-size="14" >cat certifications.md</text>
+<text x="28" y="122" fill="#cba6f7" font-size="14" >[01]</text>
+<text x="79" y="122" fill="#cdd6f4" font-size="15" >AI Fundamentals: Foundations for Understanding AI</text>
+<text x="79" y="149" fill="#a6adc8" font-size="13" >IBM SkillsBuild · 08 nov 2026</text>
+<text x="28" y="193" fill="#cba6f7" font-size="14" >[02]</text>
+<text x="79" y="193" fill="#cdd6f4" font-size="15" >Machine Learning for Data Science Projects</text>
+<text x="79" y="220" fill="#a6adc8" font-size="13" >IBM SkillsBuild · 08 nov 2026</text>
+<text x="28" y="252" fill="#a6e3a1" font-size="12" >↳ Enlaces de verificación disponibles al pie de la terminal.</text>
+</g>
+<path d="M28 1733 H972" stroke="#313244" stroke-dasharray="3 7"/>
+<g transform="translate(0 1686)">
+<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
+<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
+<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
+<text x="180" y="80" fill="#89dceb" font-size="14" >whereami --ascii --region central-america</text>
 <text x="332.0" y="111.0" fill="#6c7086" font-size="12" >:</text>
 <text x="340.0" y="111.0" fill="#6c7086" font-size="12" >:</text>
 <text x="348.0" y="111.0" fill="#6c7086" font-size="12" >:</text>
@@ -426,4 +547,12 @@
 <rect x="703" y="345" width="26" height="15" fill="#89b4fa"/>
 <rect x="729" y="345" width="26" height="15" fill="#cba6f7"/>
 <rect x="755" y="345" width="26" height="15" fill="#f5c2e7"/>
+</g>
+<text x="28" y="2154" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
+<text x="139" y="2154" fill="#cba6f7" font-size="14" >~</text>
+<text x="158" y="2154" fill="#89dceb" font-size="14" >❯</text>
+<text x="180" y="2154" fill="#89dceb" font-size="14" >echo &quot;Aprender, construir, documentar.&quot;</text>
+<text x="28" y="2184" fill="#a6adc8" font-size="14" >Aprender, construir, documentar.</text>
+<text x="28" y="2214" fill="#a6e3a1" font-size="14" >rodolfo@arch ~ ❯</text>
+<rect x="178" y="2201" width="9" height="16" fill="#89dceb"/>
 </g></svg>

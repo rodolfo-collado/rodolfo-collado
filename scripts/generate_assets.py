@@ -3,6 +3,7 @@
 from html import escape
 import json
 from pathlib import Path
+import textwrap
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
@@ -39,7 +40,7 @@ def save(name, parts):
 
 def prompt(command, y=80):
     return [text(28, y, "rodolfo@arch", GREEN), text(139, y, "~", PURPLE),
-            text(158, y, "❯", CYAN), text(180, y, command)]
+            text(158, y, "❯", CYAN), text(180, y, command, CYAN)]
 
 
 def palette(x, y):
@@ -67,7 +68,7 @@ def header():
           text(30, 361, "ING. DE SISTEMAS / UAM", CYAN, 12),
           text(400, 361, "MANAGUA, NICARAGUA", GREEN, 12),
           text(771, 361, "ES / EN B2", PURPLE, 12)]
-    save("terminal-header.svg", p)
+    return p
 
 
 def stack():
@@ -86,7 +87,61 @@ def stack():
             p += [text(x+16, 174+i*26, "[+]", color, 13), text(x+53, 174+i*26, entry, TEXT, 14)]
     p += [text(28, 342, "EDITOR", MUTED, 11),
           text(95, 342, "IntelliJ IDEA · DataGrip · PyCharm · VS Code", TEXT, 13)]
-    save("terminal-stack.svg", p)
+    return p
+
+
+def paragraph(value, y, color=TEXT, width=105):
+    return [text(28, y+i*24, line, color, 14)
+            for i, line in enumerate(textwrap.wrap(value, width=width))]
+
+
+def about():
+    p = frame(278, "", "Presentación")
+    p += prompt("whoami")
+    p += paragraph("Soy Rodolfo, estudiante de Ingeniería de Sistemas en la Universidad Americana (UAM).", 118)
+    p += paragraph("Trabajo con Java, Spring Boot, Python y SQL. Me interesa construir software, entender cómo funciona y documentar lo que aprendo.", 154)
+    p += paragraph("Linux también es parte de mi día a día: mi guía de Arch Linux reúne el proceso de instalación y configuración con BTRFS, rEFInd y Hyprland.", 220, MUTED)
+    return p
+
+
+def projects():
+    p = frame(430, "", "Proyectos destacados")
+    p += prompt("ls ~/projects --featured")
+    p += [text(28, 121, "01", PURPLE, 16),
+          text(66, 121, "Arch Linux · Guía de instalación", TEXT, 17)]
+    p += paragraph("Un recorrido de 14 capítulos para instalar y configurar Arch Linux: particionado, subvolúmenes BTRFS, montaje, fstab, arch-chroot, mkinitcpio, usuarios, rEFInd y Hyprland.", 154)
+    p += [text(28, 226, "[ Linux / Arch Linux / BTRFS / Hyprland / Documentación técnica ]", CYAN, 13),
+          f'<path d="M28 249 H972" stroke="{BORDER}"/>',
+          text(28, 280, "02", PURPLE, 16),
+          text(66, 280, "PyGebra · Álgebra lineal paso a paso", TEXT, 17)]
+    p += paragraph("Calculadora educativa que explica el procedimiento: matrices, sistemas de ecuaciones y métodos numéricos. Algoritmos con Python estándar, resultados exactos con fracciones e interfaces de escritorio, navegador local y terminal.", 313)
+    p += [text(28, 405, "[ Python / Álgebra lineal / Algoritmos / Software educativo ]", CYAN, 13)]
+    return p
+
+
+def achievements():
+    p = frame(224, "", "Logros e idiomas")
+    p += prompt("cat achievements.log")
+    p += [text(28, 120, "[2026-10-28]", GREEN, 13),
+          text(148, 120, "Segundo lugar · III Olimpiadas de Programación en Java", TEXT, 14),
+          text(148, 146, "Universidad Americana (UAM)", MUTED, 13),
+          text(28, 184, "[2024]", CYAN, 13),
+          text(148, 184, "Inglés B2 (CEFR) · UAM Language Center", TEXT, 14),
+          text(148, 210, "Español nativo", MUTED, 13)]
+    return p
+
+
+def certifications():
+    p = frame(268, "", "Certificaciones IBM SkillsBuild")
+    p += prompt("cat certifications.md")
+    p += [text(28, 122, "[01]", PURPLE),
+          text(79, 122, "AI Fundamentals: Foundations for Understanding AI", TEXT, 15),
+          text(79, 149, "IBM SkillsBuild · 08 nov 2026", MUTED, 13),
+          text(28, 193, "[02]", PURPLE),
+          text(79, 193, "Machine Learning for Data Science Projects", TEXT, 15),
+          text(79, 220, "IBM SkillsBuild · 08 nov 2026", MUTED, 13),
+          text(28, 252, "↳ Enlaces de verificación disponibles al pie de la terminal.", GREEN, 12)]
+    return p
 
 
 def inside_ring(x, y, ring):
@@ -138,11 +193,36 @@ def location():
     ]):
         p += [text(573, 195+i*28, label, CYAN, 13), text(675, 195+i*28, value, TEXT, 13)]
     p += palette(573, 345)
-    save("terminal-location.svg", p)
+    return p
+
+
+def profile():
+    # Reuse each section's contents inside one shared terminal frame.
+    sections = [(header(), 386), (about(), 278), (stack(), 370),
+                (projects(), 430), (achievements(), 224),
+                (certifications(), 268), (location(), 432)]
+    footer_height = 116
+    height = 45 + sum(h-45 for _, h in sections) + footer_height
+    p = frame(height, "rodolfo@arch: ~  —  profile.sh",
+              "Perfil de Rodolfo Ramírez Collado. Presentación, tecnologías, proyectos Arch Linux y PyGebra, "
+              "segundo lugar en olimpiadas de Java, inglés B2, certificaciones IBM SkillsBuild y mapa ASCII de Nicaragua.")
+    offset = 45
+    for index, (parts, section_height) in enumerate(sections):
+        group = next(i for i, part in enumerate(parts) if part.startswith('<g font-family='))
+        p.append(f'<g transform="translate(0 {offset-45})">')
+        # Skip the section's original window title and keep prompt + output.
+        p.extend(parts[group+2:])
+        p.append('</g>')
+        offset += section_height-45
+        if index < len(sections)-1:
+            p.append(f'<path d="M28 {offset+2} H972" stroke="{BORDER}" stroke-dasharray="3 7"/>')
+    p += prompt('echo "Aprender, construir, documentar."', offset+36)
+    p += [text(28, offset+66, "Aprender, construir, documentar.", MUTED),
+          text(28, offset+96, "rodolfo@arch ~ ❯", GREEN),
+          f'<rect x="178" y="{offset+83}" width="9" height="16" fill="{CYAN}"/>']
+    save("terminal-profile.svg", p)
 
 
 if __name__ == "__main__":
-    header()
-    stack()
-    location()
-    print("Generated 3 profile SVGs in assets/")
+    profile()
+    print("Generated assets/terminal-profile.svg")
