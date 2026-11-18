@@ -8,10 +8,10 @@
 <g font-family="'DejaVu Sans Mono', 'Liberation Mono', monospace">
 <text x="88" y="28" fill="#a6adc8" font-size="12" >rodolfo@arch: ~  —  profile.sh</text>
 <g transform="translate(0 0)">
-<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#89dceb" font-size="14" >./profile.sh --intro</text>
+<text x="28" y="80" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="80" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="80" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="80" fill="#89dceb" font-size="20" >./profile.sh --intro</text>
 <text x="28" y="123" fill="url(#spectrum)" font-size="19" xml:space="preserve">██████╗   ██████╗  ██████╗   ██████╗  ██╗      ███████╗  ██████╗ </text>
 <text x="28" y="143" fill="url(#spectrum)" font-size="19" xml:space="preserve">██╔══██╗ ██╔═══██╗ ██╔══██╗ ██╔═══██╗ ██║      ██╔════╝ ██╔═══██╗</text>
 <text x="28" y="163" fill="url(#spectrum)" font-size="19" xml:space="preserve">██║  ██║ ██║   ██║ ██║  ██║ ██║   ██║ ██║      ██║      ██║   ██║</text>
@@ -28,10 +28,10 @@
 </g>
 <path d="M28 388 H972" stroke="#313244" stroke-dasharray="3 7"/>
 <g transform="translate(0 341)">
-<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#89dceb" font-size="14" >whoami</text>
+<text x="28" y="80" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="80" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="80" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="80" fill="#89dceb" font-size="20" >whoami</text>
 <text x="28" y="118" fill="#cdd6f4" font-size="14" >Soy Rodolfo, estudiante de Ingeniería de Sistemas en la Universidad Americana (UAM).</text>
 <text x="28" y="154" fill="#cdd6f4" font-size="14" >Trabajo con Java, Spring Boot, Python y SQL. Me interesa construir software, entender cómo funciona y</text>
 <text x="28" y="178" fill="#cdd6f4" font-size="14" >documentar lo que aprendo.</text>
@@ -40,10 +40,10 @@
 </g>
 <path d="M28 621 H972" stroke="#313244" stroke-dasharray="3 7"/>
 <g transform="translate(0 574)">
-<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#89dceb" font-size="14" >stack --list --no-percentages</text>
+<text x="28" y="80" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="80" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="80" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="80" fill="#89dceb" font-size="20" >stack --list --no-percentages</text>
 <rect x="28" y="107" width="298" height="200" rx="8" fill="#181825" stroke="#313244"/>
 <text x="43" y="134" fill="#cba6f7" font-size="13" >01 / DESARROLLO</text>
 <path d="M43 147 H311" stroke="#313244"/>
@@ -82,10 +82,10 @@
 </g>
 <path d="M28 946 H972" stroke="#313244" stroke-dasharray="3 7"/>
 <g transform="translate(0 899)">
-<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#89dceb" font-size="14" >ls ~/projects --featured</text>
+<text x="28" y="80" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="80" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="80" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="80" fill="#89dceb" font-size="20" >ls ~/projects --featured</text>
 <text x="28" y="121" fill="#cba6f7" font-size="16" >01</text>
 <text x="66" y="121" fill="#cdd6f4" font-size="17" >Arch Linux · Guía de instalación</text>
 <text x="28" y="154" fill="#cdd6f4" font-size="14" >Un recorrido de 14 capítulos para instalar y configurar Arch Linux: particionado, subvolúmenes BTRFS,</text>
@@ -101,10 +101,10 @@
 </g>
 <path d="M28 1331 H972" stroke="#313244" stroke-dasharray="3 7"/>
 <g transform="translate(0 1284)">
-<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#89dceb" font-size="14" >cat achievements.log</text>
+<text x="28" y="80" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="80" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="80" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="80" fill="#89dceb" font-size="20" >cat achievements.log</text>
 <text x="28" y="120" fill="#a6e3a1" font-size="13" >[2026-10-28]</text>
 <text x="148" y="120" fill="#cdd6f4" font-size="14" >Segundo lugar · III Olimpiadas de Programación en Java</text>
 <text x="148" y="146" fill="#a6adc8" font-size="13" >Universidad Americana (UAM)</text>
@@ -114,10 +114,10 @@
 </g>
 <path d="M28 1510 H972" stroke="#313244" stroke-dasharray="3 7"/>
 <g transform="translate(0 1463)">
-<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#89dceb" font-size="14" >cat certifications.md</text>
+<text x="28" y="80" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="80" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="80" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="80" fill="#89dceb" font-size="20" >cat certifications.md</text>
 <text x="28" y="122" fill="#cba6f7" font-size="14" >[01]</text>
 <text x="79" y="122" fill="#cdd6f4" font-size="15" >AI Fundamentals: Foundations for Understanding AI</text>
 <text x="79" y="149" fill="#a6adc8" font-size="13" >IBM SkillsBuild · 08 nov 2026</text>
@@ -128,10 +128,10 @@
 </g>
 <path d="M28 1733 H972" stroke="#313244" stroke-dasharray="3 7"/>
 <g transform="translate(0 1686)">
-<text x="28" y="80" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="80" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="80" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="80" fill="#89dceb" font-size="14" >whereami --ascii --region central-america</text>
+<text x="28" y="80" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="80" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="80" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="80" fill="#89dceb" font-size="20" >whereami --ascii --region central-america</text>
 <text x="332.0" y="111.0" fill="#6c7086" font-size="12" >:</text>
 <text x="340.0" y="111.0" fill="#6c7086" font-size="12" >:</text>
 <text x="348.0" y="111.0" fill="#6c7086" font-size="12" >:</text>
@@ -548,11 +548,14 @@
 <rect x="729" y="345" width="26" height="15" fill="#cba6f7"/>
 <rect x="755" y="345" width="26" height="15" fill="#f5c2e7"/>
 </g>
-<text x="28" y="2154" fill="#a6e3a1" font-size="14" >rodolfo@arch</text>
-<text x="139" y="2154" fill="#cba6f7" font-size="14" >~</text>
-<text x="158" y="2154" fill="#89dceb" font-size="14" >❯</text>
-<text x="180" y="2154" fill="#89dceb" font-size="14" >echo &quot;Aprender, construir, documentar.&quot;</text>
+<text x="28" y="2154" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="2154" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="2154" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="2154" fill="#89dceb" font-size="20" >echo &quot;Aprender, construir, documentar.&quot;</text>
 <text x="28" y="2184" fill="#a6adc8" font-size="14" >Aprender, construir, documentar.</text>
-<text x="28" y="2214" fill="#a6e3a1" font-size="14" >rodolfo@arch ~ ❯</text>
-<rect x="178" y="2201" width="9" height="16" fill="#89dceb"/>
+<text x="28" y="2214" fill="#a6e3a1" font-size="20" >rodolfo@arch</text>
+<text x="190" y="2214" fill="#cba6f7" font-size="20" >~</text>
+<text x="215" y="2214" fill="#89dceb" font-size="20" >❯</text>
+<text x="240" y="2214" fill="#89dceb" font-size="20" ></text>
+<rect x="240" y="2197" width="12" height="21" fill="#89dceb"/>
 </g></svg>

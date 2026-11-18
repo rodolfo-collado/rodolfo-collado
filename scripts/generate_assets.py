@@ -11,6 +11,8 @@ BG, PANEL, BORDER = "#11111b", "#181825", "#313244"
 TEXT, MUTED = "#cdd6f4", "#a6adc8"
 PURPLE, CYAN, GREEN, PEACH = "#cba6f7", "#89dceb", "#a6e3a1", "#fab387"
 FONT = "'DejaVu Sans Mono', 'Liberation Mono', monospace"
+PROMPT_SIZE = 20
+COMMAND_X = 240
 
 
 def text(x, y, value, fill=TEXT, size=14, extra=""):
@@ -39,8 +41,10 @@ def save(name, parts):
 
 
 def prompt(command, y=80):
-    return [text(28, y, "rodolfo@arch", GREEN), text(139, y, "~", PURPLE),
-            text(158, y, "❯", CYAN), text(180, y, command, CYAN)]
+    return [text(28, y, "rodolfo@arch", GREEN, PROMPT_SIZE),
+            text(190, y, "~", PURPLE, PROMPT_SIZE),
+            text(215, y, "❯", CYAN, PROMPT_SIZE),
+            text(COMMAND_X, y, command, CYAN, PROMPT_SIZE)]
 
 
 def palette(x, y):
@@ -217,9 +221,9 @@ def profile():
         if index < len(sections)-1:
             p.append(f'<path d="M28 {offset+2} H972" stroke="{BORDER}" stroke-dasharray="3 7"/>')
     p += prompt('echo "Aprender, construir, documentar."', offset+36)
-    p += [text(28, offset+66, "Aprender, construir, documentar.", MUTED),
-          text(28, offset+96, "rodolfo@arch ~ ❯", GREEN),
-          f'<rect x="178" y="{offset+83}" width="9" height="16" fill="{CYAN}"/>']
+    p += [text(28, offset+66, "Aprender, construir, documentar.", MUTED)]
+    p += prompt("", offset+96)
+    p += [f'<rect x="{COMMAND_X}" y="{offset+79}" width="12" height="21" fill="{CYAN}"/>']
     save("terminal-profile.svg", p)
 
 
