@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Generate self-contained profile SVGs with Python 3 (standard library only)."""
+"""Generate a font-independent SVG using Python 3 and rsvg-convert.
+
+Python uses only its standard library. See scripts/README.md for system tools.
+"""
 from html import escape
 import json
 from pathlib import Path
+import subprocess
 import textwrap
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
@@ -37,7 +42,31 @@ def frame(height, title, description):
 
 
 def save(name, parts):
-    (ASSETS / name).write_text("\n".join(parts + ["</g></svg>" ]) + "\n", encoding="utf-8")
+    source = "\n".join(parts + ["</g></svg>"]) + "\n"
+    # SVG images in editor webviews cannot reliably access system fonts.
+    # Outline text at build time so viewers only need to draw vector paths.
+    try:
+        result = subprocess.run(
+            ["rsvg-convert", "--format=svg"], input=source.encode("utf-8"),
+            capture_output=True, check=True,
+        )
+    except FileNotFoundError:
+        raise SystemExit("Install rsvg-convert (librsvg); see scripts/README.md.") from None
+    svg = ET.fromstring(result.stdout)
+    namespace = "http://www.w3.org/2000/svg"
+    ET.register_namespace("", namespace)
+    ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
+    svg.set("role", "img")
+    svg.set("aria-labelledby", "title desc")
+    # The outline exporter removes accessibility metadata; restore it.
+    original = ET.fromstring(source)
+    for index, tag in enumerate(("title", "desc")):
+        element = original.find(f"{{{namespace}}}{tag}")
+        if element is not None:
+            svg.insert(index, element)
+    if svg.findall(f".//{{{namespace}}}text"):
+        raise RuntimeError("The exported SVG still contains font-dependent text.")
+    ET.ElementTree(svg).write(ASSETS / name, encoding="utf-8", xml_declaration=True)
 
 
 def prompt(command, y=80):
